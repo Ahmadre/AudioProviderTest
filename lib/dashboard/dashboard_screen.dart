@@ -13,7 +13,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: MaterialButton(
+        child: ElevatedButton(
+          style: ButtonStyle(
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+            ),
+          ),
           child: const Text('Start Audio Session'),
           onPressed: () => Navigator.of(context).push(
             MaterialPageRoute(

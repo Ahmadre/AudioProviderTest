@@ -28,7 +28,7 @@ class AudioNotifier extends ChangeNotifier {
     await _player.stop();
     await _player.setAudioSource(_audioSource!);
 
-    if (!kIsWeb) await player.setVolume(4.0);
+    if (!kIsWeb) await player.setVolume(2.0);
     notifyListeners();
   }
 
