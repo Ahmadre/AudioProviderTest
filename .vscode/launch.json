@@ -1,0 +1,18 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Audio Notifier (Debug)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+              "--no-sound-null-safety",
+              "--dart-define=AUDIO_URI=https://www.kozco.com/tech/piano2-Audacity1.2.5.mp3",
+            ]
+          },
+    ]
+}
